@@ -16,16 +16,19 @@ namespace WindowsFormsApp2
     public UserControl1()
     {
       InitializeComponent();
-     
+      //dataGridView1.Columns[0].Width = 80;
+      //dataGridView1.Columns[1].Width = 60;
+      //this.BoolList.Add(new BoolProperty() { Name = "one", Value="123" });
+      this.dataGridView1.Font = new Font(this.Font.FontFamily, 7);
       __lst = new List<round>();
-      
+
       __lst.Add(new round() { One = "Всего контроллеров", Two = "10 100"});
       __lst.Add(new round() { One = "Плохая связь", Two = "3000" });
       __lst.Add(new round() { One = "Нет связи", Two = "500"});
       this.dataGridView1.DataSource = __lst;
+
       dataGridView1.Columns[0].DefaultCellStyle.ForeColor = Color.Gray;
-      dataGridView1.Columns[0].Width = 80;
-      dataGridView1.Columns[1].Width = 60;
+      dataGridView1.AllowUserToAddRows = false;
       //dataGridView1.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
       dataGridView1.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
       dataGridView1.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
@@ -88,12 +91,12 @@ namespace WindowsFormsApp2
       get
       {
        
-        return this.label1.Text;
+        return this.groupBox1.Text;
 
       }
       set
       {
-        this.label1.Text = value;
+        this.groupBox1.Text = value;
         this.Invalidate();
       }
     }
@@ -116,22 +119,15 @@ namespace WindowsFormsApp2
       }
     }
 
-    private void dataGridView1_SelectionChanged(object sender, EventArgs e)
-    {
-      this.dataGridView1.ClearSelection();
-    }
+    //private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+    //{
+    //  this.dataGridView1.ClearSelection();
+    //}
+
+   
   }
 
-  [Serializable]
-  public class BoolProperty
-  {
-    public string Name { get; set; }
+  
 
-    public bool Value { get; set; }
-
-    public override string ToString()
-    {
-      return Name ?? "Empty Boolean Property";
-    }
-  }
+ 
 }

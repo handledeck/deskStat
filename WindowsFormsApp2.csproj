@@ -95,6 +95,7 @@
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\BoolProperty.datasource" />
     <None Include="Properties\DataSources\round.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

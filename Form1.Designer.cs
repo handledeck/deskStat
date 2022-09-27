@@ -4,14 +4,14 @@ namespace WindowsFormsApp2
   partial class Form1
   {
     /// <summary>
-    /// Обязательная переменная конструктора.
+    /// Required designer variable.
     /// </summary>
     private System.ComponentModel.IContainer components = null;
 
     /// <summary>
-    /// Освободить все используемые ресурсы.
+    /// Clean up any resources being used.
     /// </summary>
-    /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+    /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
     protected override void Dispose(bool disposing)
     {
       if (disposing && (components != null))
@@ -21,38 +21,26 @@ namespace WindowsFormsApp2
       base.Dispose(disposing);
     }
 
-    #region Код, автоматически созданный конструктором форм Windows
+    #region Windows Form Designer generated code
 
     /// <summary>
-    /// Требуемый метод для поддержки конструктора — не изменяйте 
-    /// содержимое этого метода с помощью редактора кода.
+    /// Required method for Designer support - do not modify
+    /// the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent()
     {
-      this.components = new System.ComponentModel.Container();
-      this.roundBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-      this.roundBindingSource = new System.Windows.Forms.BindingSource(this.components);
       this.userControl11 = new WindowsFormsApp2.UserControl1();
-      ((System.ComponentModel.ISupportInitialize)(this.roundBindingSource1)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.roundBindingSource)).BeginInit();
       this.SuspendLayout();
-      // 
-      // roundBindingSource1
-      // 
-      this.roundBindingSource1.DataSource = typeof(WindowsFormsApp2.round);
-      // 
-      // roundBindingSource
-      // 
-      this.roundBindingSource.DataSource = typeof(WindowsFormsApp2.round);
       // 
       // userControl11
       // 
-      this.userControl11.BackShapeColor = System.Drawing.Color.Maroon;
-      this.userControl11.Header = "label1";
-      this.userControl11.LabelOne = "one";
-      this.userControl11.Location = new System.Drawing.Point(189, 79);
+      this.userControl11.AutoScroll = true;
+      this.userControl11.BackShapeColor = System.Drawing.Color.Black;
+      this.userControl11.Header = "groupBox1";
+      this.userControl11.LabelOne = "";
+      this.userControl11.Location = new System.Drawing.Point(85, 41);
       this.userControl11.Name = "userControl11";
-      this.userControl11.Size = new System.Drawing.Size(296, 198);
+      this.userControl11.Size = new System.Drawing.Size(294, 149);
       this.userControl11.TabIndex = 0;
       this.userControl11.Value = "Value";
       // 
@@ -60,23 +48,16 @@ namespace WindowsFormsApp2
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.AutoScroll = true;
-      this.ClientSize = new System.Drawing.Size(1187, 595);
+      this.ClientSize = new System.Drawing.Size(800, 450);
       this.Controls.Add(this.userControl11);
-      this.Margin = new System.Windows.Forms.Padding(4);
       this.Name = "Form1";
       this.Text = "Form1";
-      ((System.ComponentModel.ISupportInitialize)(this.roundBindingSource1)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.roundBindingSource)).EndInit();
       this.ResumeLayout(false);
 
     }
 
-
     #endregion
-    private System.Windows.Forms.BindingSource roundBindingSource;
-    private System.Windows.Forms.BindingSource roundBindingSource1;
+
     private UserControl1 userControl11;
   }
 }
-
